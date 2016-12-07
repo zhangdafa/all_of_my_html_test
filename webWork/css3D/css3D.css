@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding:0;
+}
+/*父容器*/
+.cube{
+	width: 300px;
+	height: 300px;
+	margin: 300px auto 0 auto;
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective:0;
+	/*-webkit-perspective-origin:-25 -25;*/
+	-webkit-transform-origin:150px 150px 0;
+	-webkit-animation-name:animation;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:6s;
+}
+
+@-webkit-keyframes animation{
+	16%{-webkit-transform:rotateY(-90deg);}
+	33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform:rotateY(235deg) rotateZ(135deg);}
+	80%{-webkit-transform:rotateX(120deg);}
+}
+/*二级容器*/
+.frontSide{
+	position: absolute;
+	-webkit-transform: translateZ(150px);
+}
+
+.backSide{
+	position: absolute;
+	-webkit-transform: translateZ(-150px);
+}
+
+.leftSide{
+	position: absolute;
+	-webkit-transform: rotateY(90deg) translateZ(-150px);
+}
+
+.rightSide{
+	position: absolute;
+	-webkit-transform: rotateY(90deg) translateZ(150px);
+}
+
+.upSide{
+	position: absolute;
+	-webkit-transform: rotateX(90deg) translateZ(-150px);
+}
+
+.underSide{
+	position: absolute;
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+}
+
+.frontSide .red{
+	background-color: red;
+}
+
+.backSide .orange{
+	background-color: orange;
+}
+
+.leftSide .blue{
+	background-color: blue
+}
+
+.rightSide .green{
+	background-color: green;
+}
+
+.upSide .white{
+	background-color: black;
+}
+
+.underSide .yellow{
+	background-color: yellow;
+}
+/*三级容器*/
+.cubeLayout{
+	float: left;
+	border-radius: 7px;
+}
+/*中间块*/
+.centerBlock{
+	width: 96px;
+	height: 96px;
+	margin:2px 2px 2px 2px;
+}
+/*中上*/
+.centerTop{
+	width: 96px;
+	height: 98px;
+	margin:0 2px 2px 2px;
+}
+/*中下*/
+.centerBottom{
+	width: 96px;
+	height: 98px;
+	margin:2px 2px 0 2px;
+}
+/*左中*/
+.leftMiddle{
+	width: 98px;
+	height: 96px;
+	margin:2px 2px 2px 0;
+}
+/*右中*/
+.rightMiddle{
+	width: 98px;
+	height: 96px;
+	margin:2px 0 2px 2px;
+}
+
+/*左上*/
+.leftTop{
+	width: 98px;
+	height: 98px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+/*左下*/
+.leftBottom{
+	width: 98px;
+	height: 98px;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+/*右上*/
+.rightTop{
+	width: 98px;
+	height: 98px;
+	margin-left: 2px;
+	margin-bottom: 2px;
+}
+/*右下*/
+.rightBottom{
+	width: 98px;
+	height: 98px;
+	margin-top: 2px;
+	margin-left: 2px;
+}

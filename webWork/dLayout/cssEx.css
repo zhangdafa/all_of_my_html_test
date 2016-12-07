@@ -1,0 +1,12 @@
+.first{
+	height: 300px;
+	width: 400px;
+	background-color: red;
+	float: left;
+}
+
+.second{
+	height: 300px;
+	width: 500px;
+	background-color: black;
+}

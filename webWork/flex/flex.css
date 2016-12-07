@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*普通盒子允许自动适配*/
+
+.normalbox {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: green;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: black;
+}
+
+
+/*怪异盒子：必须将父级容器的宽度与高度与子级容器显式匹配*/
+
+.strangebox {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.container1 {
+    height: 300px;
+    width: 600px;
+    display: -webkit-flex;
+    display: flex;
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient:vertical;*/
+    background-color: #ff5722;
+    color:white;
+    margin-top: 10px;
+}
+/*在使用伪类选择器的时候发现了一个错误，一个空格导致了两个代码意义
+.container :nth-child(1); 表示container类的第一个子元素
+.container:nth-child(1);表示当前节点下第一个类为container的子元素
+*/
+.container1 :nth-child(1) {
+    -webkit-flex: 1;
+    background-color: red;
+}
+
+.container1 :nth-child(2) {
+    -webkit-flex: 1;
+    background-color: black;
+}
+
+.container1 :nth-child(3) {
+    -webkit-flex: 1;
+    background-color: green;
+} 
+
+.container2 {
+    height: 300px;
+    width: 600px;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    background-color: #ff5722;
+    color:white;
+    margin-top: 10px;
+}
+
+.container2 :nth-child(1) {
+    -webkit-box-flex:1;
+    background-color: red;
+}
+
+.container2 :nth-child(2) {
+    -webkit-box-flex:1;
+    background-color: black;
+}
+
+.container2 :nth-child(3) {
+    -webkit-box-flex:1;
+    background-color: green;
+}
+
+.container3 {
+    height: 300px;
+    width: 600px;
+    display: -webkit-flex;
+    display: flex;
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient:vertical;*/
+    background-color: #ff5722;
+    color:white;
+    margin-top: 10px;
+}
+
+.container3 :nth-child(1) {
+    -webkit-flex: 1;
+    -webkit-order:3;
+    background-color: red;
+}
+
+.container3 :nth-child(2) {
+    -webkit-flex: 1;
+    -webkit-order:2;
+    background-color: black;
+}
+
+.container3 :nth-child(3) {
+    -webkit-flex: 1;
+    -webkit-order:1;
+    background-color: green;
+} 
+
+.container4{
+	-webkit-column-rule-style:solid;
+	-webkit-column-count:3;
+	-webkit-column-gap:20px;
+	-webkit-column-rule-width:10px;
+	width: 500px;
+	height:auto;
+	margin-top: 10px;
+	border:1px solid black;
+}
+
+.container5{
+	width: 400px;
+	height: 400px;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	background-color: #ff5722;
+}
+
+.container5 :nth-child(1){
+	background-color: green;
+	width: 200px;
+	height: 200px;
+}

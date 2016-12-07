@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	min-width: 400px;
+}
+/*头*/
+.header{
+	background-color: orange;
+	min-height: 180px;
+	margin-bottom: 10px;
+}
+/*内容*/
+.artical{
+	min-height: 300px;
+	overflow: hidden;
+}
+/*中列*/
+.artical .middle{
+	float: left;
+	width: 100%;
+}
+/*中列内容*/
+.artical .middle .inner{
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	background-color:#b6b6b6;
+	margin-left: 160px;
+	margin-right: 110px;
+}
+/*左侧内容*/
+.artical .left{
+	background-color:#b6b6b6;
+	width: 150px;
+	float:left;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+/*右侧内容*/
+.artical .right{
+	background-color:#b6b6b6;
+	width: 100px;
+	float: left;
+	margin-left: -100px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+/*尾*/
+.footer{
+	margin-top: 10px;
+	background: yellow;
+	min-height: 180px;
+}

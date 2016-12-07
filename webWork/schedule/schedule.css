@@ -1,0 +1,17 @@
+body {
+        background-color: #D3D3D3;
+        height: 800px;
+    }
+
+#table{
+	border-color: black;
+	position: relative;
+	top: 35%;
+	margin: auto auto;
+	text-align: center;
+
+}
+#time{
+	/*width: 100px;*/
+	column-width: 100px;
+}

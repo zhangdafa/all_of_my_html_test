@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>注册页面</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 网站头部 -->
+        <div class="header">
+            <!-- 图片链接 -->
+            <a href="#"><img src="qdjjlogo.gif"></a>
+            <!-- 标签组 -->
+            <div class="aGroup">
+                <a href="#" class="aAttr">注册</a>
+                <a href="#" class="aAttr">登陆</a>
+                <a href="#" class="aAttr">收藏本站</a>
+            </div>
+        </div>
+        <!-- 网站表单主体 -->
+        <div class="formBody">
+            <form>
+                <table width="690px" cellpadding="2" cellspacing="0" border="1">
+                    <caption class="caption">新教员注册第二步</caption>
+                    <tbody>
+                        <!-- 提示 -->
+                        <tr>
+                            <td colspan="2" align="center">
+                                您的注册资料越详细就越有利于家长和学员检索，也就越容易获得家长的预约，所以请您务必如实详细地填写。 其中红色星号
+                                <font color="#FF0000">*</font>为必填。我们已对您的个人信息做保密处理，您的信息是安全的。
+                                <br/> 您选择的是
+                                <font color="#FF0000">专职教师</font>身份,若有误请<a href="#">返回</a>更改
+                            </td>
+                        </tr>
+                        <!-- 第一栏 -->
+                        <tr>
+                            <td colspan="2" bgcolor="#EEEEEE">
+                                <strong class="sign">基本资料</strong>
+                            </td>
+                        </tr>
+                        <!-- 姓名表单 -->
+                        <tr>
+                            <td width="132px" align="right">
+                                <label for="tname">
+                                    <font color="#FF0000">*</font>真实姓名:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="tname" />
+                                <p>
+                                    <font color="#FF0000">注意：</font>
+                                    <font color="#0000FF">姓名应与身份证完全一致，本网站将对你的姓名严格保密，只显示您的姓，如“张教员”。此部分将在认证时严格审查，一经填写不得修改，与证件不符者将不能通过认证！</font>
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- 证件表单 -->
+                        <tr>
+                            <td align="right">
+                                <label for="user">
+                                    身份证/护照:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="user" />
+                                <span><font color="#0000FF">(此项将严格保密，不对外公开)</font></span>
+                            </td>
+                        </tr>
+                        <!-- 性别表单 -->
+                        <tr>
+                            <td align="right">
+                                <label for="sex">
+                                    <font color="#FF0000">*</font>性别:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="sex">
+                                    <option>请选择...</option>
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- 出生年份 -->
+                        <tr>
+                            <td align="right">
+                                <label for="date">
+                                    <font color="#FF0000">*</font> 出生年份:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="date" />
+                            </td>
+                        </tr>
+                        <!-- 最高学历 -->
+                        <tr>
+                            <td align="right">
+                                <label for="study">
+                                    <font color="#FF0000">*</font>最高学历:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="study">
+                                    <option>-请选择-</option>
+                                    <option value="本科">本科</option>
+                                    <option value="高中">高中</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- 目前身份 -->
+                        <tr>
+                            <td align="right">
+                                <label for="option">
+                                    <font color="#FF0000">*</font>目前身份:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="option">
+                                    <option>-请选择-</option>
+                                    <option value="一">在职一教师</option>
+                                    <option value="二">在职二教师</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- 籍贯 -->
+                        <tr>
+                            <td align="right">
+                                <label for="area">
+                                    <font color="#FF0000">*</font>籍贯:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="area">
+                                    <option>-请选择-</option>
+                                    <option value="一">上海</option>
+                                    <option value="二">北京</option>
+                                </select>
+                                <font color="#0000FF">（并非指当前所在地）</font>
+                            </td>
+                        </tr>
+                        <!-- 毕业高校 -->
+                        <tr>
+                            <td align="right">
+                                <label for="school">
+                                    <font color="#FF0000">*</font>毕业高校:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="school" />
+                            </td>
+                        </tr>
+                        <!-- 职称等级 -->
+                        <tr>
+                            <td align="right">
+                                <label for="grade">
+                                    <font color="#FF0000">*</font>职称等级:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="grade">
+                                    <option>-请选择-</option>
+                                    <option value="一">一</option>
+                                    <option value="二">二</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- 目前任职学校 -->
+                        <tr>
+                            <td align="right">
+                                <label for="nschool">
+                                    目前任职学校:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="nschool" />
+                                <font color="#0000FF">请填全称！严格保密</font>
+                            </td>
+                        </tr>
+                        <!-- 教龄 -->
+                        <tr>
+                            <td align="right">
+                                <label for="old">
+                                    <font color="#FF0000">*</font>教龄:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="old">
+                                    <option>0</option>
+                                    <option value="一" selected>1</option>
+                                    <option value="二">2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- 任教学科 -->
+                        <tr>
+                            <td align="right">
+                                <label for="course">
+                                    <font color="#FF0000">*</font>任教学科:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="course">
+                                    <option>请选择任教学科</option>
+                                    <option value="一">XXX</option>
+                                    <option value="二">AAA</option>
+                                </select>
+                                <font color="#0000FF">以证件原件为准</font>
+                            </td>
+                        </tr>
+                        <!-- 任职学校类别 -->
+                        <tr>
+                            <td align="right">
+                                <label for="style">
+                                    <font color="#FF0000">*</font>任职学校类别:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="style">
+                                    <option>请选择学校类别</option>
+                                    <option value="一">XXX</option>
+                                    <option value="二">AAA</option>
+                                </select>
+                                <font color="#0000FF">请如实填写！以工作证或聘书为准！</font>
+                            </td>
+                        </tr>
+                        <!-- 联系方式 -->
+                        <tr>
+                            <td colspan="2" bgcolor="#EEEEEE">
+                                <strong class="sign">联系方式</strong>
+                            </td>
+                        </tr>
+                        <!-- 手机/小灵通 -->
+                        <tr>
+                            <td align="right">
+                                <label for="phone">
+                                    <font color="#FF0000">*</font>手机/小灵通:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="phone" required />
+                                <font color="#0000FF"> 最好留下多个联系方式，换号时请及时更新联系方式</font>
+                            </td>
+                        </tr>
+                        <!-- 目前住所 -->
+                        <tr>
+                            <td align="right">
+                                <label for="nplace">
+                                    <font color="#FF0000">*</font>目前住所:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="nplace">
+                                    <option>-请选择-</option>
+                                    <option value="一">XXXXXXXXXXXXXXX</option>
+                                    <option value="二">AAA</option>
+                                </select>
+                                <font color="#0000FF">选择离您的住所最近的地点</font>
+                            </td>
+                        </tr>
+                        <!-- 家庭或校外住所 -->
+                        <tr>
+                            <td align="right">
+                                <label for="hplace">
+                                    家庭或校外住所:
+                                </label>
+                            </td>
+                            <td>
+                                <select required name="hplace">
+                                    <option>-请选择-</option>
+                                    <option value="一">XXXXXXXXXXXXXXX</option>
+                                    <option value="二">AAA</option>
+                                </select>
+                                <font color="#0000FF">请家在青岛市区或住在校外的教员填写</font>
+                            </td>
+                        </tr>
+                        <!-- email -->
+                        <tr>
+                            <td align="right">
+                                <label for="email">
+                                    <font color="#FF0000">*</font>email:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" required />
+                                <font color="#0000FF"> (为通知合适您的家教及找回密码，请认真填写)</font>
+                            </td>
+                        </tr>
+                        <!-- qq -->
+                        <tr>
+                            <td align="right">
+                                <label for="qq">
+                                    qq:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="qq" />
+                            </td>
+                        </tr>
+                        <!-- 详细地址 -->
+                        <tr>
+                            <td align="right">
+                                <label for="dplace">
+                                    详细地址:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="dplace" />
+                                <font color="#0000FF"> (以方便我们给您寄送家教相关资料及协议等。)</font>
+                            </td>
+                        </tr>
+                        <!-- 家教信息 -->
+                        <tr>
+                            <td colspan="2" bgcolor="#EEEEEE">
+                                <strong class="sign">家教信息</strong>
+                            </td>
+                        </tr>
+                        <!-- 普通话 -->
+                        <!-- 第一外语 -->
+                        <!-- 第二外语 -->
+                        <!-- 自我描述与特长展示 -->
+                        <!-- 家教经历 -->
+                        <!-- 可辅导的科学 -->
+                        <!-- 方便授课区域 -->
+                        <tr>
+                        	<td align="right">
+                        		<label for="narea">
+                        			<font color="#FF0000">*</font>方便授课区域:
+                        		</label>
+                        	</td>
+                        	<td>
+                        		<strong>---上海---</strong>
+                        		<input type="checkbox" class="forInput" /><font color="#FF0000" name="narea">上海全区</font>
+                        		<div>
+                        			<input type="checkbox" class="forInput" name="narea" />XXX
+                        			<input type="checkbox" class="forInput" name="narea" />XXX
+                        		</div>
+                        		<strong>---北京---</strong>
+                        		<input type="checkbox" class="forInput" name="narea" /><font color="#FF0000">北京全区</font>
+                        		<div>
+                        			<input type="checkbox" class="forInput" name="narea" />XXX
+                        			<input type="checkbox" class="forInput" name="narea" />XXX
+                        		</div>
+                        	</td>
+                        </tr>
+                        <!-- 可授课时间 -->
+                        <tr>
+                            <td align="right">
+                                <label for="atime">
+                                    <font color="#FF0000">*</font>可授课时间:
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="atime" placeholder="授课时间无限制" />
+                                <font color="#0000FF">（请注意及时更新授课时间）</font>
+                            </td>
+                        </tr>
+                        <!-- 辅导方式 -->
+                        <tr>
+                        	<td align="right">
+                        		<label for="ways">
+                        			<font color="#FF0000">*</font>辅导方式:
+                        		</label>
+                        	</td>
+                        	<td>
+                        		<input type="checkbox" name="ways" class="forInput" />  教员上门
+                        		<input type="checkbox" name="ways" class="forInput" />  学员上门
+                        	</td>
+                        </tr>
+                        <!-- 薪酬要求 -->
+                        <tr>
+                            <td align="right">
+                                <label for="salary">
+                                    <font color="#FF0000">*</font>薪酬要求:
+                                </label>
+                            </td>
+                            <td>
+                                <textarea rows="7" cols="60" name="salary" placeholder="执行青岛家教网薪水标准"></textarea>
+                                <p>
+                                    <font color="#0000FF"> 默认为接受青岛家教网的课时费标准（查看详细的报酬标准
+                                        <变成链接>)，如果不同意，也可以在表中列出自己的薪酬要求，如：小学**元/时、小学奥数**元/时、初一**元/时、高三**元/时、钢琴**元/时、陪读**元/月。</font>
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- 提交 -->
+                        <tr>
+                            <td colspan="2" height="60px" align="center">
+                                <input type="submit" value="       提交       " id="submit" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- 网站底部 -->
+        <div class="footer">
+            <font color="#666666">Copyright © 2003～2008</font> 版权所有 青岛家教网
+        </div>
+    </div>
+</body>
+
+</html>

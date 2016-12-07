@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 1px 1px #C0C0C0;
+}
+
+#black {
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+#pic{
+	top: 50%;
+	left: 50%;
+	margin-left: -12px;
+	margin-top: -12px;
+	position: absolute;
+}
+
+#red {
+    top: 100px;
+    position: absolute;
+    background-color: red;
+}
+
+#blue {
+    top: -100px;
+    position: absolute;
+    background-color: blue;
+}
+
+#green {
+    left: 100px;
+    position: absolute;
+    background-color: green;
+}
+
+#yellow {
+    right: 100px;
+    position: absolute;
+    background-color: yellow;
+}

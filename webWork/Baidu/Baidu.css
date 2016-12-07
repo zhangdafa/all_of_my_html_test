@@ -1,0 +1,521 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+}
+
+@media screen and (min-width:901px) {
+    .pc {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 19px 0 5px 0;
+        padding: 0 96px 0 0;
+        float: right;
+        text-align: center;
+        font: 12px arial;
+    }
+    .childnav {
+        float: left;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 20px;
+        font-size: 13px;
+        color: black;
+    }
+    .childnav:hover {
+        color: blue;
+    }
+    .morePro {
+        background-color: #38F;
+        color: white;
+        margin-left: 20px;
+        margin-right: 2px;
+        line-height: 24px;
+        text-align: center;
+        font-size: 13px;
+        border-bottom: 1px solid #38f;
+        width: 60px;
+        height: 23px;
+        overflow: hidden;
+        display: block;
+        float: left;
+        right: 10px;
+        position: absolute;
+        text-decoration: none;
+    }
+    .mainform {
+        position: relative;
+        top: 160px;
+        text-align: center;
+    }
+    #text {
+        width: 560px;
+        height: 34px;
+        font: 15px arial;
+        /*IE8*/
+        font: 24px arial\0;
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid #b6b6b6;
+        border-right-width: 0;
+        outline: none;
+    }
+    /*IE9,10*/
+    :root #text {
+        font: 15px arial\0;
+    }
+    #text:hover {
+        border-color: #999;
+    }
+    #text:focus {
+        border-color: #4791ff;
+    }
+    #button {
+        padding: 0;
+        border: 0;
+        color: white;
+        height: 36px;
+        width: 100px;
+        background-color: #38F;
+        border-style: none;
+        margin-left: -8px;
+        /*IE8*/
+        margin-left: -4px\0;
+        cursor: pointer;
+        font-size: 15px;
+        /*IE8,9,10*/
+        font-size: 14px\0;
+    }
+    /*IE9,10*/
+    :root #button {
+        font-size: 16px\0;
+    }
+    /*firefox*/
+    @-moz-document url-prefix() {
+        #button {
+            font-size: 14px;
+        }
+    }
+    #button:hover {
+        background-color: #3e71f3;
+        box-shadow: 1px 1px 1px #ccc;
+    }
+    .footer {
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font: 12px arial;
+    }
+    .foota {
+        color: #00c;
+    }
+    .footer p a {
+        color: #666;
+    }
+    .verticalNav {
+        background-color: #f9f9f9;
+        border-left: 1px solid #e7e7e7;
+        position: absolute;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        z-index: 2;
+        right: 0;
+        top: -19px;
+        width: 85px;
+        min-height: 860px;
+        display: none;
+    }
+    .bdmorePro {
+        border-bottom: #f0f0f0 1px solid;
+        color: #333;
+        text-align: center;
+        width: 66px;
+        height: 43px;
+        line-height: 43px;
+        padding-top: 9px;
+        margin: 0 auto;
+        font-size: 13px;
+        cursor: default;
+    }
+    .allPro {
+        height: 30px;
+        margin: 10px auto 5px;
+        text-decoration: none;
+        color: #666;
+        width: 66px;
+        text-align: center;
+    }
+    .nava {
+        display: block;
+        text-align: center;
+        width: 66px;
+        height: 76px;
+        margin: 10px auto 5px;
+        border-bottom: #f0f0f0 1px solid;
+        color: #666;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    div.verticalNav a:hover {
+        text-decoration: underline;
+    }
+    div.verticalNav span {
+        display: block;
+        margin: 10px auto 5px;
+        height: 36px;
+    }
+    .music {
+        background: url(bd.png) no-repeat;
+        background-position: -72px 0;
+        width: 40px;
+    }
+    .img {
+        background: url(bd.png) no-repeat;
+        background-position: -112px 0;
+        width: 36px;
+    }
+    .know {
+        background: url(bd.png) no-repeat;
+        background-position: -36px 0;
+        width: 36px;
+    }
+    .library {
+        background: url(bd.png) no-repeat;
+        background-position: -148px 0;
+        width: 36px;
+    }
+    .top {
+        background: url(bd.png) no-repeat;
+        background-position: -184px 0;
+        width: 36px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        -webkit-text-size-adjust: none;
+        background: #f1f1f1;
+        overflow-x: hidden;
+    }
+    a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+    input,
+    button,
+    textarea {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    div,
+    ol,
+    ul,
+    input,
+    button {
+        margin: 0;
+        padding: 0;
+    }
+    #page {
+        background: #f8f8f8;
+    }
+    /*weather*/
+    #weather {
+        position: relative;
+        height: 0;
+    }
+    #weather .weather-outline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 6px 0 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .weather-icon {
+        display: inline-block;
+        position: relative;
+        top: 4px;
+    }
+    div.weather-num {
+        font-size: 29px;
+        color: #999;
+        padding-left: 4px;
+        padding-right: 3px;
+        font-weight: 300;
+        display: inline-block;
+    }
+    .weather-status {
+        display: inline-block;
+    }
+    .weather-status p {
+        height: 14px;
+        line-height: 14px;
+        font-size: 10px;
+        color: #999;
+        text-align: left;
+    }
+    .icon-down {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid #b6b7ba;
+        border-bottom: 2px solid #b6b7ba;
+        transform: rotate(45deg);
+        background-color: #f1f1f1;
+        position: relative;
+        bottom: 3px;
+    }
+    /*weather end*/
+    /*head */
+    #head {
+        margin-bottom: 8px;
+    }
+    .head-nav {
+        position: relative;
+        height: 35px;
+    }
+    .user {
+        position: absolute;
+        top: 2px;
+        right: 40px;
+    }
+    .skin {
+        position: absolute;
+        right: 10px;
+    }
+    #logo {
+        height: 57px;
+        padding-bottom: 17px;
+    }
+    /*head end*/
+    /*form */
+    #index-form {
+        height: 45px;
+        margin: 0 16px;
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    }
+    .con-wrap {
+        display: -webkit-box;
+        width: 100%;
+    }
+    #index-form .se-input {
+        border-radius: 0;
+        margin: 0;
+        padding: 7px 35px 7px 6px;
+        height: 45px;
+        line-height: 28px;
+        resize: none;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        display: block;
+        -webkit-box-flex: 1;
+        position: relative;
+    }
+    /*按钮*/
+    #index-form .se-inner {
+        width: 82px;
+        position: relative;
+    }
+    .baiduapp-icon {
+        position: absolute;
+        left: -31px;
+    }
+    .baiduapp-icon:before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        border: 4px solid transparent;
+        border-top-color: #717077;
+    }
+    .baiduapp-icon:after {
+        content: "";
+        display: inline-block;
+        margin-top: 9px;
+        height: 20px;
+        width: 14px;
+        background: url(mmsicon.png) 1px 0 no-repeat;
+        background-size: 33px 19px;
+        margin-top: 12px;
+    }
+    #index-bn {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 82px;
+        height: 45px;
+        background: #38f;
+        color: #fff;
+        white-space: nowrap;
+        line-height: 45px;
+        letter-spacing: -1px;
+        font-size: 16px;
+        border-top: 1px solid #38f;
+        border-bottom: 1px solid #38f;
+        box-sizing: inherit;
+        -webkit-border-top-right-radius: 2px;
+        border-top-right-radius: 2px;
+        -webkit-border-bottom-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        text-shadow: none;
+        -webkit-box-flex: 1 auto;
+    }
+    button {
+        outline: none;
+    }
+    /*nav*/
+    #navs {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-top: 19px;
+        padding-bottom: 16px;
+    }
+    .ns-swipe-wrap {
+        overflow: hidden;
+        position: relative;
+        height: 43px;
+    }
+    .ns-swipe-item {
+        position: relative;
+        float: left;
+        padding: 0 23px;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /*a*/
+    .ns-item {
+        width: 28px;
+    }
+    i.ns-focus,
+    i.ns-news,
+    i.ns-novel,
+    i.ns-video,
+    i.ns-life,
+    i.ns-map,
+    i.ns-tieba,
+    i.ns-app,
+    i.ns-image,
+    i.ns-website,
+    i.ns-extend,
+    i.ns-music {
+        background: url(ns_diff_color_v2.png) no-repeat;
+        background-size: 22px auto;
+    }
+    .ns-item .ns-text {
+        display: block;
+        height: 13px;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 13px;
+        line-height: 1;
+        color: #666;
+    }
+    .ns-item .ns-icon {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin: 0 auto;
+    }
+    i.ns-focus {
+        background-position: 0 -264px;
+    }
+    i.ns-news {
+        background-position: 0 -396px;
+    }
+    i.ns-novel {
+        background-position: 0 -330px;
+    }
+    i.ns-video {
+        background-position: 0 -462px;
+    }
+    i.ns-life {
+        background-position: 0 -418px;
+    }
+    i.ns-map {
+        background-position: 0 -308px;
+    }
+    /*news*/
+    .news {
+        text-align: left;
+        background: #fff;
+    }
+    .news-item a {
+        display: block;
+        margin: 0 16px;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 0 0 15px 0;
+    }
+    .text-content {
+        padding-top: 11px;
+    }
+    .news-item h2 {
+        font-weight: normal;
+        color: #333;
+        font-size: 18px;
+        line-height: 26px;
+        overflow: hidden;
+    }
+    .pic-content {
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .news-item .img-wrap {
+        display: inline-block;
+        width: 32%;
+        margin-right: 1px;
+        height: 0;
+        padding-top: 21.99%;
+        position: relative;
+        vertical-align: top;
+    }
+    .img-wrap img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .news-item .news-from span {
+        margin-right: 8px;
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+    }
+}
